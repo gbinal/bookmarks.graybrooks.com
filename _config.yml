@@ -1,0 +1,43 @@
+# GitHub Pages Configuration for bookmarks.graybrooks.com
+
+title: "Bookmarks - Gray Brooks"
+description: "A more fun start page"
+url: "https://gbinal.github.io"
+baseurl: "/bookmarks.graybrooks.com"
+
+# GitHub Pages settings
+github:
+  repository_name: bookmarks.graybrooks.com
+  
+# Build settings
+markdown: kramdown
+highlighter: rouge
+safe: true
+incremental: false
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+
+# Include files
+include:
+  - _pages
+
+# Collections (if needed in future)
+collections_dir: collections
+
+# Default layout
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
