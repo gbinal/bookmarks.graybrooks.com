@@ -1783,7 +1783,13 @@ nav button:nth-child(4) {
 .panel-5,
 .panel-6,
 .panel-7,
-.panel-8	{
+.panel-8,
+a.panel-3,
+a.panel-4,
+a.panel-5,
+a.panel-6,
+a.panel-7,
+a.panel-8	{
 	border-bottom: var(--panel-border);
 }
 
@@ -1792,11 +1798,18 @@ nav button:nth-child(4) {
 .panel-6,
 .panel-7,
 .panel-8,
-.panel-10 {
+.panel-10,
+a.panel-3,
+a.panel-4,
+a.panel-6,
+a.panel-7,
+a.panel-8,
+a.panel-10 {
 	padding: var(--left-frame-padding);
 }
 
-.panel-4	{
+.panel-4,
+a.panel-4	{
 	display: flex;
 	align-items: flex-end;
 	justify-content: flex-end;
@@ -1805,7 +1818,8 @@ nav button:nth-child(4) {
 	background-color: var(--panel-4-color); 
 }
 
-.panel-5	{
+.panel-5,
+a.panel-5	{
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -1814,40 +1828,68 @@ nav button:nth-child(4) {
 	background-color: var(--panel-5-color);
 }
 
-.panel-6	{
+.panel-6,
+a.panel-6	{
 	height: 29vh;
 	max-height: 360px;
 	background-color: var(--panel-6-color);
 }
 
-.panel-7	{
+.panel-7,
+a.panel-7	{
 	height: 27vh;
 	max-height: 350px;
 	background-color: var(--panel-7-color);
 }
 
-.panel-8	{
+.panel-8,
+a.panel-8	{
 	height: 15vh;
 	background-color: var(--panel-8-color);
 }
 
 /*	panel-9 height is fluid and governed by the amount of content on the page. Background color is inherited from :root --left-frame-color */
 
-.panel-9	{
+.panel-9,
+a.panel-9	{
 	min-height: 27vh;
 	padding: var(--left-frame-padding);
 }
 
-.panel-10 {
+.panel-10,
+a.panel-10 {
 	height: 30vh;
 	border-top: var(--panel-border);
 	background-color: var(--panel-10-color);
 }
 
+/* Ensure anchor tags with panel classes display properly */
+a.panel-3,
+a.panel-4,
+a.panel-5,
+a.panel-6,
+a.panel-7,
+a.panel-8,
+a.panel-9,
+a.panel-10 {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	text-decoration: none;
+	color: black;
+	-webkit-touch-callout: none; 
+	-webkit-user-select: none; 
+	-ms-user-select: none; 
+	user-select: none;
+}
+
 @media (max-width: 525px) {
 	.panel-4,
 	.panel-6,
-	.panel-7 {
+	.panel-7,
+	a.panel-4,
+	a.panel-6,
+	a.panel-7 {
 		height: 18vh;
 	}
 }

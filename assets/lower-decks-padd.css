@@ -984,7 +984,10 @@ nav button:nth-child(4) {
 
 .panel-3,
 .panel-4,
-.panel-5	{
+.panel-5,
+a.panel-3,
+a.panel-4,
+a.panel-5	{
 	border-bottom: var(--panel-border);
 }
 
@@ -993,11 +996,18 @@ nav button:nth-child(4) {
 .panel-4,
 .panel-5,
 .panel-6,
-.panel-7 {
+.panel-7,
+a.panel-2,
+a.panel-3,
+a.panel-4,
+a.panel-5,
+a.panel-6,
+a.panel-7 {
 	padding: var(--left-frame-padding);
 }
 
-.panel-4	{
+.panel-4,
+a.panel-4	{
 	display: flex;
 	align-items: flex-end;
 	justify-content: flex-end;
@@ -1005,21 +1015,42 @@ nav button:nth-child(4) {
 	background-color: var(--panel-4-color);
 }
 
-.panel-5	{
+.panel-5,
+a.panel-5	{
 	height: 30vh;
 	background-color: var(--panel-5-color);
 }
 
 /* Note: panel-6 height is fluid and governed by the amount of content on the page. Background color is inherited from :root --left-frame-color */
 
-.panel-6	{
+.panel-6,
+a.panel-6	{
 	min-height: 15vh;
 }
 
-.panel-7 {
+.panel-7,
+a.panel-7 {
 	height: 30vh;
 	border-top: var(--panel-border);
 	background-color: var(--panel-7-color);
+}
+
+/* Ensure anchor tags with panel classes display properly */
+a.panel-2,
+a.panel-3,
+a.panel-4,
+a.panel-5,
+a.panel-6,
+a.panel-7 {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	text-decoration: none;
+	color: black;
+	-webkit-touch-callout: none; 
+	-webkit-user-select: none; 
+	-ms-user-select: none; 
+	user-select: none;
 }
 
 .right-frame	{
